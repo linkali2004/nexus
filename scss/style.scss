@@ -1,0 +1,327 @@
+//Importing google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+//Styling body starts
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+//Styling body ends
+//Creating a mixin starts
+// @mixin under
+// {
+//             content: '';
+//             width: 40%;
+//             height: 1px;
+//             background: #fff;
+//             display: block;
+//             margin: 2% auto;
+// }
+//Creating a mixin ends
+
+//Navigation is styled here
+nav
+{
+    z-index: 3;
+    color: white;
+    transition: all 1s ease;
+    #brand
+    {
+        letter-spacing: 3px;
+        // font-size: 30px;
+        color: #e9c46a;
+    }
+}
+
+nav ul li a
+{
+    color: white;
+    // font-family: 'Open Sans', sans-serif;
+}
+nav ul li a:hover
+{
+    color: white;
+}
+//Navigation styling ends here
+//carousel styling starts
+.carousel
+{
+    height: 100%;
+}
+.carousel-inner img
+{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption
+{
+    p
+    {
+        color: #fdfdfd;
+        font-size: 20px;
+        &::after
+        {
+            content: '';
+            width: 40%;
+            height: 1px;
+            background: #fff;
+            display: block;
+            margin: 2% auto;
+        }
+    }
+    h2
+    {
+        font-size: 80px;
+    }
+    margin-bottom: 15%;
+}
+//carousel styling ends
+//Section a styling starts here
+#a
+{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    overflow: hidden;
+    #cunt
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px 40px 0px;
+    }
+
+}
+#heading
+{
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &::after
+    {
+        content: '';
+        width: 5%;
+        height: 1px;
+        background: #999999;
+        display: block;
+        margin: 1% auto;
+    }
+}
+.card-body
+{
+
+    .lead
+    {
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+        letter-spacing: 2px;
+        &::after
+        {
+            content: '';
+            width: 40%;
+            height: 1px;
+            background: #999999;
+            display: block;
+            margin: 2% auto;
+        }
+    }
+    h4
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .card-text
+    {
+        color: #999999;
+        font-size: 14px;
+        width: 90%;
+        margin:0 auto 6%;
+    }
+    .container-fluid
+    {
+        padding: 0;
+        width: 100%;
+    }
+    button
+{
+    border: 2px solid #999999;
+    color: #999999;
+}
+
+}
+#f1
+{
+    padding-top: 20px;
+}
+#f2
+{
+    padding-top: 20px;
+}
+//section a styling ends here
+//Adding class on scroll starts
+.show
+{
+    background: #000;
+    transition: all 1s ease;
+}
+//Addding class on scroll ends
+//Section e starts here
+#e
+{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0) , rgba(0,0,0,0.7)) , url("/img/bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 9%;
+    // padding-bottom:10% ;
+    .lead
+    {
+        color: #999999;
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 2px;
+        &::after
+        {
+            content: '';
+            width: 40%;
+            height: 1px;
+            background: #999999;
+            display: block;
+            margin: 1% auto;
+        }
+    }
+    h5
+    {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+}
+//Section e ends here
+//Section b starts here
+#b
+{
+    width: 100%;
+    height: auto;
+    .container-fluid
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px 10px 30px;
+        .row
+        {
+            padding: 0;        width: 100%;
+            height: auto;
+        }
+        .row > div
+        {
+            margin-bottom: 2%;
+        }
+    }
+
+}
+//Section b ends here
+//Section c starts here
+#c
+{
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+    .container-fluid
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px 10px 7%;
+        .row
+        {
+            padding: 0;        width: 100%;
+            height: auto;
+        }
+        .row > div
+        {
+            margin-bottom: 2%;
+        }
+    }
+}
+
+//section c ends here
+//Media queries starts here
+@media screen and (max-width:768px)
+{
+    .carousel
+    {
+        height: 50%;
+    }
+    .carousel-caption
+    {
+        p
+        {
+            font-size: 15px;
+            &::after
+            {
+                content: '';
+                width: 40%;
+                height: 1px;
+                background: #fff;
+                display: block;
+                margin: 2% auto;
+            }
+        }
+        h2
+        {
+            font-size: 40px;
+        }
+        margin-bottom: 10%;
+    }
+    #e
+    {
+        padding-top: 20%;
+    }
+}
+//Media Queries ends here
+//Section d starts here
+#d
+{
+    width: 100%;
+    height: auto;
+    .container-fluid
+    {
+        width: 100%;
+        height: auto;
+        padding: 20px 7% 20px 7% ;
+    }
+}
+//Section d ends here
+//Footer section starts
+#f
+{
+    width: 100%;
+    height: 200px;
+    background:#000;
+    .container-fluid
+    {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        i
+        {
+            font-size: 25px;
+            margin-left: 2.5%;
+        }
+    }
+    .container
+    {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        padding-top: 20px;
+        p
+        {
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 4px;
+        }
+    }
+}
+//Footer ends here
